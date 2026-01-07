@@ -55,7 +55,7 @@ jobs:
     - name: Create zip archive
       run: |
         mv build/* .
-        zip -r "GradientPlus_${VERSION}.zip" グラデーション+.anm2 README.md LICENSE.txt
+        7z a "GradientPlus_${VERSION}.zip" *.anm2 README.md LICENSE.txt
       env:
         VERSION: ${{github.ref_name}}
 
