@@ -1,0 +1,17 @@
+project:
+  variables:
+    AUTHOR: azurite
+
+build:
+  out_dir: build
+
+install:
+  out_dir:
+
+scripts:
+  - name: グラデーション+.anm2
+    sources:
+      - path: script/グラデーション+.in.anm2
+        variables:
+          VERSION: v1.1.0
+          INFO: グラデーション+
