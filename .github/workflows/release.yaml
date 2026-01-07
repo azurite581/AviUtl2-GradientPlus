@@ -60,7 +60,7 @@ jobs:
         VERSION: ${{github.ref_name}}
 
     - name: Create release notes
-      run: gh release create "${VERSION}" --generate-notes "${{github.workspace}}/*.zip"
+      run: gh release create "${VERSION}" --generate-notes "GradientPlus_${VERSION}.zip"
       env:
         VERSION: ${{github.ref_name}}
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
