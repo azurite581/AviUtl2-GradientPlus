@@ -23,25 +23,25 @@ float4 psmain(float4 pos : SV_Position) : SV_Target {
         case 1:  // 円形
             t = grad_circle(st, gradient_w);
             break;
-        case 2:  // 短形
+        case 2:  // 矩形
             t = grad_square(st, gradient_w);
             break;
         case 3:  // 凸形
             t = grad_convex(st, gradient_w);
             break;
-        case 4:  // 角丸短形
+        case 4:  // 角丸矩形
             t = grad_round_square(st, gradient_w);
             break;
         case 5:  // 円ループ
             t = grad_circle_loop(st, gradient_w);
             break;
-        case 6:  // 短形ループ
+        case 6:  // 矩形ループ
             t = grad_square_loop(st, gradient_w);
             break;
         case 7:  // 凸形ループ
             t = grad_convex_loop(st, gradient_w);
             break;
-        case 8:  // 角丸短形ループ
+        case 8:  // 角丸矩形ループ
             t = grad_round_square_loop(st, gradient_w);
             break;
         default:

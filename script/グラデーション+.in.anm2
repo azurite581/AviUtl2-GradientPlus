@@ -6,7 +6,7 @@
 --track@angle:角度,-3600,3600,0,0.01
 --track@gradient_w:幅,0,2000,100,1
 --select@blend_mode:合成モード,通常=0,加算=1,減算=2,乗算=3,スクリーン=4,オーバーレイ=5,比較(明)=6,比較(暗)=7,輝度=8,色差=9,陰影=10,明暗=11,差分=12
---select@gradient_type:形状,線形=0,円形=1,短形=2,凸形=3,角丸短形=4,円形ループ=5,短形ループ=6,凸形ループ=7,角丸短形ループ=8
+--select@gradient_type:形状,線形=0,円形=1,矩形=2,凸形=3,角丸矩形=4,円形ループ=5,矩形ループ=6,凸形ループ=7,角丸矩形ループ=8
 --select@color_space:色空間=1,sRGB=0,Linear sRGB=1,HSV=2,HSL=3,L*a*b=4,LCh=5,Oklab=6,Oklch=7
 --select@interp_dir:補間経路,短経路=0,長経路=1
 --color@color1:開始色,0xffffff
