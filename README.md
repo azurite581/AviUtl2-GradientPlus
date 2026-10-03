@@ -100,11 +100,33 @@ sRGB 以外の色空間 (Linear sRGB, HSV, HSL, L\*a\*b\*, LCh, Oklab, Oklch) �
 
   終了色の透明度を指定します。
 
-## ライセンス
+## ビルド
 
-[CC0](LICENSE.txt) に基づくものとします。
+### 環境
+- Windows11
+- Git
+- [mise](https://mise.jdx.dev/)
 
-## クレジット
+### 手順
+
+1. 本リポジトリを任意の場所にクローンします。
+    ```bash
+    git clone https://github.com/azurite581/AviUtl2-GradientPlus.git
+    ```
+
+2. クローンしたフォルダに移動し、ビルドに必要なツール（[aulua](https://github.com/karoterra/aviutl2-aulua)、[aviutl2-cli](https://github.com/sevenc-nanashi/aviutl2-cli)）を mise でインストールします。
+    ```bash
+    cd AviUtl2-GradientPlus
+    mise i
+    ```
+
+3. aviutl2-cli を使ってビルドします。
+    ```bash
+    au2 prepare
+    au2 dev  # または au2 preview
+    ```
+
+## 使用したツール
 
 ### [aulua](https://github.com/karoterra/aviutl2-aulua)
 
@@ -136,6 +158,41 @@ SOFTWARE.
 ```
 
 </details>
+
+### [aviutl2-cli](https://github.com/sevenc-nanashi/aviutl2-cli)
+
+<details>
+<summary>MIT License</summary>
+
+```text
+MIT License
+
+Copyright (c) 2026 Nanashi. <sevenc7c.com>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+</details>
+
+## ライセンス
+
+[CC0](LICENSE.txt) に基づくものとします。
 
 ## 更新履歴
 
