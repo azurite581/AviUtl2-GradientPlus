@@ -1,13 +1,11 @@
 project:
   variables:
     AUTHOR: azurite
-
+    VERSION: v1.1.2
 build:
   out_dir: build
-
 install:
   out_dir:
-
 scripts:
   - name: グラデーション+.anm2
     sources:
