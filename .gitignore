@@ -1,1 +1,5 @@
 build/
+
+# AviUtl2 CLI
+/.aviutl2-cli
+/release

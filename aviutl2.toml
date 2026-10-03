@@ -1,0 +1,21 @@
+#:schema ./.aviutl2-cli/aviutl2.schema.json
+# 設定ファイルについては https://github.com/sevenc-nanashi/aviutl2-cli を参照してください。
+[project]
+id = "GradientPlus"
+name = "グラデーション+"
+version = "1.1.2"
+
+[development]
+aviutl2_version = "latest"
+
+[artifacts.GradientPlus-anm2]
+build = "aulua build"
+destination = "Script/グラデーション+.anm2"
+source = "build/グラデーション+.anm2"
+
+[preview]
+
+[release]
+output_dir = "release"
+package_template = "package.txt"
+zip_name = "{id}-v{version}"
