@@ -19,6 +19,10 @@ sRGB 以外の色空間 (Linear sRGB, HSV, HSL, L\*a\*b\*, LCh, Oklab, Oklch) �
 ### 手動インストール
 [Releases](https://github.com/azurite581/AviUtl2-GradientPlus/releases/latest) から `GradientPlus_v{version}.au2pkg.zip` をダウンロードし、AviUtl2 のプレビューにドラッグ&ドロップしてください。
 
+> [!Note]
+> ### For non-Japanese speaking users
+> Please download the translation files from [here](https://github.com/azurite581/aviutl2_translations_azurite/releases/latest).
+
 ## 使い方
 
 グラデーションをかけたいオブジェクトに `グラデーション+` を適用してください。デフォルトでは `色調整` カテゴリの中にあります。
