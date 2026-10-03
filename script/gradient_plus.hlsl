@@ -1,4 +1,5 @@
 Texture2D<float4> src : register(t0);
+SamplerState samp : register(s0);
 cbuffer constant0 : register(b0) {
     float2 resolution;
     float2 center;
@@ -11,7 +12,8 @@ cbuffer constant0 : register(b0) {
     float gradient_w;
 };
 
-float4 psmain(float4 pos : SV_Position) : SV_Target {
+float4 psmain(float4 pos : SV_Position, float2 uv : TEXCOORD) : SV_Target
+{
     float2 st = pos.xy - 0.5 * resolution - center;
     st = mul(angle, st);
 

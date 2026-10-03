@@ -20,9 +20,18 @@
 ---$include "gradient_plus.hlsl"
 ]]
 
---[[pixelshader@mask:
+--[[pixelshader@copy_opaque:
 Texture2D<float4> src : register(t0);
-float4 mask(float4 pos : SV_Position) : SV_Target {
+float4 copy_opaque(float4 pos : SV_Position) : SV_Target {
+    float4 tex = src.Load(int3(pos.xy, 0));
+    float3 rgb = (tex.a > 0.0) ? tex.rgb / tex.a : float3(0, 0, 0);
+    return float4(rgb, 1.0);
+}
+]]
+
+--[[pixelshader@passthrough:
+Texture2D<float4> src : register(t0);
+float4 passthrough(float4 pos : SV_Position) : SV_Target {
     return src.Load(int3(pos.xy, 0));
 }
 ]]
@@ -47,6 +56,8 @@ local cache_name = "orig_img_"..tostring(obj.id)
 
 obj.copybuffer("cache:"..cache_name, "object")
 obj.setoption("drawtarget", "tempbuffer", obj.w, obj.h)
+
+obj.pixelshader("copy_opaque", "object", {"object"}, {}, "copy")
 obj.draw()
 
 obj.pixelshader(
@@ -72,4 +83,4 @@ obj.draw(0.0, 0.0, 0.0, 1.0, strength / 100.0)
 obj.setoption("blend", "none")
 obj.copybuffer("obj", "tmp")
 
-obj.pixelshader("mask", "object", {"cache:"..cache_name}, {}, "mask")
+obj.pixelshader("passthrough", "object", {"cache:"..cache_name}, {}, "mask")
