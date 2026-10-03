@@ -1,18 +1,23 @@
 # AviUtl2 グラデーション+
 
-sRGB 以外の色空間 (Linear sRGB, HSV, HSL, L\*a\*b\*, LCh, Oklab, Oklch) でグラデーションさせる [AviUtl2](https://spring-fragrance.mints.ne.jp/aviutl/) 用スクリプトです。
+sRGB 以外の色空間 (Linear sRGB, HSV, HSL, L\*a\*b\*, LCh, Oklab, Oklch) でグラデーション加工をする [AviUtl2](https://spring-fragrance.mints.ne.jp/aviutl/) 用スクリプトです。
 
 ![GradientPlus](assets/gradient_plus.png)
 
 ## 動作環境
 
 - [AviUtl ExEdit2](https://spring-fragrance.mints.ne.jp/aviutl/)  
-`beta 33` で動作確認済み。
+`2.1.11a` で動作確認済み。
 
 ## 導入方法
 
-1. [Releases](https://github.com/azurite581/AviUtl2-GradientPlus/releases/latest) から zip ファイルをダウンロードしてください。
-2. zip ファイルを展開し、`グラデーション+.anm2` を `C:\ProgramData\aviutl2\Script` フォルダか一層下にあるフォルダに入れてください。本体に D&D することでも導入できます。
+次のいずれかの方法でインストールできます。
+
+### AviUtl2 カタログを使う（推奨）
+本スクリプトは [aviutl2-catalog](https://github.com/Neosku/aviutl2-catalog) に登録済みです。 メインメニュー ＞ パッケージ一覧 ＞ スクリプト ＞ ポイントズーム からインストールしてください。
+
+### 手動インストール
+[Releases](https://github.com/azurite581/AviUtl2-GradientPlus/releases/latest) から `GradientPlus_v{version}.au2pkg.zip` をダウンロードし、AviUtl2 のプレビューにドラッグ&ドロップしてください。
 
 ## 使い方
 
